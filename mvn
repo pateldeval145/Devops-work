@@ -3,7 +3,7 @@ pipeline {
 tools {
 jdk "java8"
 }
-    stages {
+    stages ('checkout') {
         stage ('Compile Stage') {
 
             steps {
