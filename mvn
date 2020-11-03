@@ -8,7 +8,7 @@ jdk "java11"
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'MAVEN_3_6_3) {
+                withMaven(maven : 'MAVEN_3_6_3') {
                     sh 'mvn clean compile'
                 }
             }
